@@ -1,0 +1,34 @@
+1.Лого
+//img[@alt='логотип Спартак']
+//div[@class='header__logo']    
+2. Каталог продукции -> Импрессо
+//a[@href='/products/Impresso/']
+3. Информацция для партнеров
+//div[@class='content_menu']/div/ul[@class='menu full']/li[3]/a
+4. Поиск ("Лупа")
+//div[@class='header__search']
+//i[@class='search fa search-btn lupa']
+5. Special version ("Глаз")
+//span[@class='header__eye']
+//img[@src='/include/eye.svg']
+6. Ru - локаль ("Ru")
+//a[@class='header__lang__item header__lang__item_ru active']
+//div[@class='header__lang']/a[1]
+7. Ch - локаль ("Ch")
+//div[@class='header__lang']/a[4]
+//a[@href='/cn/']
+8. Кнопка "Скачать каталог"
+//a[@class="download-catalog"]
+//a[@href='/upload/Каталог продукции РБ 2022.pdf']
+9. Слайдер 
+//a[@class='flex-next']
+//li[@class='flex-nav-next']/a
+10. Ссылка на youtube
+//li/a[@href='https://www.youtube.com/channel/UC2xYusMBxs4XkwoPotvTw4A']
+//img[@src='/bitrix/templates/our_shop/images/youtube.svg']
+11. Cсылка на vk.com
+//a[@href='https://vk.com/spartakby']
+//img[@src='/bitrix/templates/our_shop/images/VK.svg']
+12. Вторая по счету плитка для переключения
+//li/a[contains(text(),'2')]
+//ol[@class='flex-control-nav flex-control-paging']/li[2]

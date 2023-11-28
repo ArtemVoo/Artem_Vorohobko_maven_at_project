@@ -1,0 +1,34 @@
+1. Mail.ru
+//a[@class='ph-project__link svelte-64wa9f ph-project__link_current']
+//li[@class="ph-project svelte-64wa9f"]/a[@href='https://trk.mail.ru/c/ds8xq6?mt_sub1=mail.ru']
+2. Облако 
+//a[@href='https://trk.mail.ru/c/pqaft6?mt_sub1=mail.ru']
+//a[@data-click-counter='374382569, 61021857']
+3. Строка поиска 
+//input[@class='arrow__input mini-suggest__input']
+4. Кнопка "Найти"
+//button[@class='search-arrow__button bag__dceb__1ljar7y']
+//div[@class='search-arrow__border bag__dceb__1ljar7y']/button
+5. Леди
+//a[@href='//lady.mail.ru/']
+//div[@class='tabs bag__dceb__1khkoe6']/a[6]
+6. Первая новость в списке 
+//div[@class='news-main__title bag__dceb__dk4u50']/p
+7. Регистрация 
+//a[@class='ph-project ph-project__register svelte-1ke9xx5']
+//div[@class="ph-auth svelte-1ke9xx5"]/a
+8. Войти 
+//button[@class='ph-login svelte-1ke9xx5']
+//button[contains(text(),'Войти')]
+9. Войти 2
+//button[@class='resplash-btn resplash-btn_primary resplash-btn_mailbox-big bag__dceb__de8k2m']
+//div[@class='logged-out-one-click bag__dceb__1derk6v']/button
+10. Создать почту 
+//a[@href='//account.mail.ru/signup?from=main&rf=auth.mail.ru&promo_referrer=https://mail.ru&app_id_mytracker=58519']
+//div[@class='footer bag__dceb__wcu6lu footer_logged-out']/a
+11. Погода
+//a[@class='weather__current bag__dceb__xf8nuy weather__current_animate']
+//div[@class="weather bag__dceb__xf8nuy weather_colored weather_colored_blue"]/a[1]
+12. "Стрелка" перехода на детализацию погоды 
+//a[@class='weather__arrow bag__dceb__xf8nuy']
+//a[@class='weather__arrow bag__dceb__xf8nuy']/*[1]

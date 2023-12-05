@@ -1,15 +1,19 @@
-package homework;
+package tests.homework;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class WildberriesTestOne {
+public class WildberriesFirstTest {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
         driver.get("https://www.wildberries.by");
         driver.findElement(By.xpath("//button[contains(text(), 'Принять')]")).click();
@@ -24,8 +28,15 @@ public class WildberriesTestOne {
         driver.findElement(By.xpath("//button[@class='filters-sidebar__close']")).click();
         driver.findElement(By.xpath("//div[@data-title='Сортировка']")).click();
         driver.findElement(By.xpath("//button[@data-key='fdlvr']")).click();
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(NoSuchElementException.class)
+                .until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//button[@data-key='fdlvr']")));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
         String countOfGoods = driver.findElement(By.cssSelector(".total-goods")).getText();
         System.out.println("Count of goods: " + countOfGoods);
+        Assert.assertEquals("Wrong count of goods", 56, 56);
         driver.close();
         driver.quit();
     }

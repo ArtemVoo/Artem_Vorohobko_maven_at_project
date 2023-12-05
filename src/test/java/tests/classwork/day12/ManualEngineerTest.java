@@ -1,4 +1,4 @@
-package classwork.day12;
+package tests.classwork.day12;
 
 import classwork.day12.ManualEngineer;
 import org.junit.Assert;

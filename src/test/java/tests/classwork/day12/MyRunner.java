@@ -1,7 +1,5 @@
-package classwork.day12;
+package tests.classwork.day12;
 
-import classwork.day12.AutomationEngineerTest;
-import classwork.day12.ManualEngineerTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

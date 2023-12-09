@@ -36,7 +36,6 @@ public class WildberriesFirstTest {
 
         String countOfGoods = driver.findElement(By.cssSelector(".total-goods")).getText();
         System.out.println("Count of goods: " + countOfGoods);
-        Assert.assertEquals("Wrong count of goods", 56, 56);
         driver.close();
         driver.quit();
     }

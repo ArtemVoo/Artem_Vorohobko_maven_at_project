@@ -38,7 +38,6 @@ public class WildberriesSecondTest {
         driver.findElement(By.xpath("//button[@class='filters-sidebar__close']")).click();
 
         String totalGoodsAfterFiltering = driver.findElement(By.cssSelector(".total-goods")).getText();
-
         System.out.println("Total goods after filtering: " + totalGoodsAfterFiltering);
 
         driver.findElement(By.xpath("//div[@class='chip chip--reset-button']")).click();

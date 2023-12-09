@@ -14,7 +14,6 @@ public class BaseTest {
     @Before
     public void initDriver() {
         driver = Driver.getWebDriver();
-        driver.get("https://www.wildberries.by");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }

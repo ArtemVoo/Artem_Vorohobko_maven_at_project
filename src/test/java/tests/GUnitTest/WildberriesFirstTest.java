@@ -9,6 +9,7 @@ public class WildberriesFirstTest extends BaseTest {
     @Test
     public void wildberriesFisrt() {
         WildberriesPage wbPage = new WildberriesPage();
+        wbPage.wildberriesPage();
         wbPage.acceptCookies();
         wbPage.storageBoxSection();
         wbPage.storageBoxFilters();

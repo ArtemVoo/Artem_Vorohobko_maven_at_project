@@ -93,4 +93,7 @@ public class WildberriesPage {
                 .ignoring(NoSuchElementException.class)
                 .until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(RESET_ALL_FILTERS)));
     }
+    public void wildberriesPage(){
+        driver.get("https://www.wildberries.by");
+    }
 }

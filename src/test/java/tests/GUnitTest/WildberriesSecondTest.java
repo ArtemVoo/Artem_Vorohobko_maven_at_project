@@ -8,6 +8,7 @@ public class WildberriesSecondTest extends BaseTest {
     @Test
     public void wildberriesSecond(){
         WildberriesPage wbPage = new WildberriesPage();
+        wbPage.wildberriesPage();
         wbPage.acceptCookies();
         wbPage.decorationsSection();
         wbPage.decorationsFilter();
